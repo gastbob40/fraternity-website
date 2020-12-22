@@ -273,10 +273,10 @@
                         <div class="counter-box wow zoomIn" data-wow-duration="1000ms" data-wow-delay="0.3s">
                             <div class="count text-center">
                                 <div class="counter">
-                                    <span data-counter="10000">10 000</span>
+                                    <span data-counter="10000">1 000</span>
                                 </div>
 
-                                <h3>New players per day</h3>
+                                <h3>Nouveau joueur par mois</h3>
                             </div>
                         </div>
                     </div>
@@ -286,10 +286,10 @@
                         <div class="counter-box wow zoomIn" data-wow-duration="1000ms" data-wow-delay="0.5s">
                             <div class="count text-center">
                                 <div class="counter">
-                                    <span data-counter="30">30</span>
+                                    <span data-counter="30" id="online-player">30</span>
                                 </div>
 
-                                <h3>Players online</h3>
+                                <h3>Joueurs connectés</h3>
                             </div>
                         </div>
                     </div>
@@ -299,9 +299,9 @@
                         <div class="counter-box wow zoomIn" data-wow-duration="1000ms" data-wow-delay="0.7s">
                             <div class="count text-center">
                                 <div class="counter">
-                                    <span data-counter="12458">12,458</span>
+                                    <span data-counter="8">8</span>
                                 </div>
-                                <h3>Months since the launch</h3>
+                                <h3>Ouvert depuis 8 mois</h3>
                             </div>
                         </div>
                     </div>
@@ -450,6 +450,17 @@
 <!-- Dependency Scripts -->
 <script src="dependencies/popper.js/popper.min.js"></script>
 <script src="dependencies/jquery/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $.get('http://51.91.75.202:30120/gMenu/players/', function (data) {
+            const connectedPlayer = data.data.length;
+            $("#online-player").replaceWith(`<span data-counter="${connectedPlayer}" id="online-player">${connectedPlayer}</span>`);
+            THEMEIM.initialize.countUp()
+        });
+    });
+</script>
+
 <script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
 <script src="dependencies/swiper/js/swiper.min.js"></script>
 <script src="dependencies/swiperRunner/swiperRunner.min.js"></script>

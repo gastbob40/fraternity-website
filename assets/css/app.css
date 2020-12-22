@@ -11984,22 +11984,6 @@ select.orderby {
     color: #FFF;
 }
 
-.footer-social-link li.fb-bg {
-    background-image: url("../../media/footer/2.png");
-}
-
-.footer-social-link li.in-bg {
-    background-image: url("../../media/footer/3.png");
-}
-
-.footer-social-link li.tw-bg {
-    background-image: url("../../media/footer/4.png");
-}
-
-.footer-social-link li.gp-bg {
-    background-image: url("../../media/footer/5.png");
-}
-
 .footer-social-link li:hover {
     opacity: 0.8;
 }
