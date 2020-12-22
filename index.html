@@ -410,7 +410,7 @@
 
 <script>
     $(document).ready(function () {
-        $.get('http://51.91.75.202:30120/gMenu/players/', function (data) {
+        $.get('https://51.91.75.202:30120/gMenu/players/', function (data) {
             const connectedPlayer = data.data.length;
             $("#online-player").replaceWith(`<span data-counter="${connectedPlayer}" id="online-player">${connectedPlayer}</span>`);
             THEMEIM.initialize.countUp()
