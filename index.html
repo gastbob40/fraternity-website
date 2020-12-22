@@ -1,0 +1,482 @@
+<html lang="en">
+<head>
+    <style>
+        .jquery-ripples {
+            position: relative;
+            z-index: 0;
+        }</style>
+    <!-- Meta Data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accueil FRaternity</title>
+
+    <!-- Fav Icon -->
+    <!--<link rel="apple-touch-icon" sizes="180x180" href="assets/img/fav-icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/fav-icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/fav-icons/favicon-16x16.png">-->
+
+
+    <!-- Dependency Styles -->
+    <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Site Stylesheet -->
+    <link rel="stylesheet" href="dependencies/swiper/swiper.min.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/wow/css/animate.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/magnific-popup/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/jquery-animated-headlines/css/jquery.animatedheadline.css"
+          type="text/css">
+    <link rel="stylesheet" href="assets/css/woocommerce.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/jquery-ui/css/jquery-ui.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/slick-carousel/css/slick.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/app.css" type="text/css">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+
+
+</head>
+
+<body id="home-version-1" class="home-version-1 vsc-initialized" data-style="default">
+
+<div id="loader-wrapper" style="display: none;">
+    <div class="loader">
+        <div class="loader-inner"></div>
+        <div class="loader-inner"></div>
+        <div class="loader-inner"></div>
+        <div class="loader-inner"></div>
+    </div>
+</div>
+
+<a href="#main_content" data-type="section-switch" class="return-to-top back-top"><i class="fa fa-chevron-up"></i></a>
+
+<div id="main_content">
+
+
+    <!--=========================-->
+    <!--=        Navbar         =-->
+    <!--=========================-->
+    <header class="header header-two">
+        <div class="nav">
+            <div class="container">
+                <div class="nav-wrap">
+                    <div id="site-logo">
+                        <a href="index.html">
+                            <img width="48px" height="48px"
+                                 src="https://cdn.discordapp.com/icons/704644331138711582/a_a487a3e10059c999ed2ecb3262b7e8ca.png?size=1024"
+                                 alt="Site Logo">
+                        </a>
+                    </div>
+                    <ul class="tim-nav text-right">
+                        <li><a href="">Voitures</a></li>
+                        <li><a href="">Hélicoptères</a></li>
+                        <li><a href="">Hélicoptères</a></li>
+                        <li><a href="">Roue de la chance</a></li>
+                        <li><a href="">Bateaux</a></li>
+                    </ul>
+                </div>
+                <!-- /.nav-wrap -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.nav -->
+    </header>
+    <!-- /#header -->
+
+    <!--================================-->
+    <!--=        Mobile Navbar         =-->
+    <!--================================-->
+    <header id="mobile-nav-wrap" class="">
+        <div class="mob-header-inner d-flex justify-content-between">
+            <div id="mobile-logo" class="d-flex justify-content-start">
+                <a href="#"><img src="https://themeim.com/demo/gio/index/assets/img/logo.png" alt="Site Logo"></a>
+            </div>
+
+            <ul class="user-link nav justify-content-end">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#signInModal">
+                        <i class="fa fa-user"></i>
+                        Login
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#signUpModal">
+                        <i class="fa fa-sign-in"></i>
+                        Sign Up
+                    </a>
+                </li>
+            </ul>
+
+            <div id="nav-toggle" class="nav-toggle hidden-md">
+                <div class="toggle-inner">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <!-- /.mob-header-inner -->
+    </header>
+    <!-- /#mobile-header -->
+
+    <div class="mobile-menu-inner mnav-fixed">
+
+        <div class="close-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <nav id="accordian">
+            <ul class="accordion-menu">
+                <li>
+                    <a href="#0" class="dropdownlink">Home</a>
+                    <ul class="submenuItems">
+                        <li><a href="index.html">Home Shooter</a></li>
+                        <li><a href="index-clan.html">Home Clan</a></li>
+                        <li><a href="index-zoombie.html">Home Zoombie</a></li>
+                        <li><a href="404.html">404 Page</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="overview.html">Overview</a>
+                </li>
+                <li>
+                    <a href="game.html">Game</a>
+                </li>
+
+                <li>
+                    <a href="strategy.html">Strategy</a>
+                </li>
+                <li>
+                    <a href="community.html">Community</a>
+                </li>
+                <li>
+                    <a href="#0" class="dropdownlink">Store</a>
+                    <ul class="submenuItems">
+                        <li><a href="store.html">Four Column</a></li>
+                        <li><a href="store-three-column-right.html">Three Column Right</a></li>
+                        <li><a href="store-three-column-left.html">Three Column Left</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#0" class="dropdownlink">Blog</a>
+                    <ul class="submenuItems">
+                        <li><a href="blog-fullwidth.html">Full Width</a></li>
+                        <li><a href="blog-right-sidebar.html">Right Sidebar</a></li>
+                        <li><a href="blog-masonry.html">Masonry</a></li>
+                        <li><a href="blog-single-right.html">Details</a></li>
+                        <li><a href="blog-single-fullwidth.html">Details Fullwidth</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="community.html">Team</a>
+                </li>
+                <li>
+                    <a href="community.html">Tournament</a>
+                </li>
+            </ul>
+        </nav>
+
+        <form action="#" id="moble-search">
+            <input type="text" placeholder="Search....">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <!-- /#moble-search -->
+
+        <ul class="footer-social-link">
+            <li class="fb-bg"><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li class="in-bg"><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li class="tw-bg"><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li class="gp-bg"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        </ul>
+    </div>
+    <!-- /.mobile-menu-inner -->
+
+
+    <!--=========================-->
+    <!--=        Banner         =-->
+    <!--=========================-->
+    <section id="page-header"
+             style="background-image: url(https://cdn.discordapp.com/attachments/313315801279102986/788068657259347988/Sans_titre-1.png);">
+        <div class="container">
+            <div class="page-title-wrap">
+                <div class="page-title-inner">
+                    <h1><span>FR</span>aternity</h1>
+                    <h3>Serveur <span>Whitelist</span></h3>
+                </div>
+                <!-- /.page-title-inner -->
+            </div>
+            <!-- /.page-title-wrap -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /#page-header -->
+
+    <!--===============================-->
+    <!--=        Game Download        =-->
+    <!--===============================-->
+    <section id="game-download" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="download-inner">
+                        <h2 class="title wow fadeInUp" data-wow-duration="1000ms">
+                            FRaternity
+                            <br>
+                            <span>Serveur Whitelist</span>
+                        </h2>
+
+                        <p class="wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.3">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequipsam.
+                        </p>
+
+                        <p class="wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.5">
+
+                            Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequipsam.
+                        </p>
+
+                        <a href="https://discord.com/invite/fraternity" class="popup-btn-two"
+                           >
+                            <i class="fa fa-play"></i>Rejoindre le discord
+                        </a>
+
+
+                    </div>
+                    <!-- /.download-inner -->
+                </div>
+                <!-- /.col-md-6 -->
+
+                <div class="col-md-6">
+                    <div class="download-image-wrap">
+                        <img src="https://i.ytimg.com/vi/ffBYmgi8krY/maxresdefault.jpg" alt="thumb">
+                    </div>
+                    <!-- /.download-image-wrap -->
+                </div>
+                <!-- /.col-md-6 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /#game-download -->
+
+    <!--================================-->
+    <!--=        Purchase Game         =-->
+    <!--================================-->
+    <section id="countup" class="section-padding">
+        <div class="container">
+            <div class="counter-inner">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="counter-box wow zoomIn" data-wow-duration="1000ms" data-wow-delay="0.3s">
+                            <div class="count text-center">
+                                <div class="counter">
+                                    <span data-counter="32165">32,165</span>
+                                </div>
+                                <div class="count-delemeter">
+                                    <img src="https://themeim.com/demo/gio/index/media/background/cu1.png"
+                                         alt="delemetter">
+                                </div>
+                                <h3>New players per day</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-4 col-md-3 col-sm-6 -->
+
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="counter-box wow zoomIn" data-wow-duration="1000ms" data-wow-delay="0.5s">
+                            <div class="count text-center">
+                                <div class="counter">
+                                    <span data-counter="30">30</span>
+                                    <span>k</span>
+                                </div>
+                                <img src="https://themeim.com/demo/gio/index/media/background/cu1.png" alt="delemetter">
+                                <h3>Players online</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-4 col-md-3 col-sm-6 -->
+
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="counter-box wow zoomIn" data-wow-duration="1000ms" data-wow-delay="0.7s">
+                            <div class="count text-center">
+                                <div class="counter">
+                                    <span data-counter="12458">12,458</span>
+                                </div>
+                                <img src="https://themeim.com/demo/gio/index/media/background/cu1.png" alt="delemetter">
+                                <h3>Months since the launch</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-4 col-md-3 col-sm-6 -->
+
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="counter-box wow zoomIn" data-wow-duration="1000ms" data-wow-delay="0.7s">
+                            <div class="count text-center">
+                                <div class="counter">
+                                    <span data-counter="985">985</span>
+                                    <span>k</span>
+                                </div>
+                                <img src="https://themeim.com/demo/gio/index/media/background/cu1.png" alt="delemetter">
+                                <h3>Unique players</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-4 col-md-3 col-sm-6 -->
+
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.counter-inner -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /#countup -->
+
+    <!--=================================-->
+    <!--=        Clent Carousel         =-->
+    <!--=================================-->
+    <section id="logo-carousel-two">
+        <div class="container">
+            <div class="swiper-container tim-logo-carousel swiper-container-horizontal"
+                 data-swiper-config="{&quot;loop&quot;: true, &quot;speed&quot;: 700, &quot;spaceBetween&quot;: 50, &quot;autoplay&quot;: 3000, &quot;pagination&quot;:&quot;#brand-swiper-pagination&quot;, &quot;slidesPerView&quot;: 6, &quot;grabCursor&quot;: true, &quot;paginationClickable&quot;: true, &quot;breakpoints&quot;: { &quot;768&quot;: { &quot;slidesPerView&quot;: 3 }, &quot;500&quot;: { &quot;slidesPerView&quot;: 2 }}}"
+                 style="cursor: grab;">
+                <div class="swiper-wrapper" style="transform: translate3d(-704px, 0px, 0px); transition-duration: 0ms;">
+                    <div class="swiper-slide swiper-slide-duplicate" style="width: 126px; margin-right: 50px;"
+                         data-swiper-slide-index="4">
+                        <div class="brand-logo">
+                            <img src="https://themeim.com/demo/gio/index/media/logo/5.png" alt="Brand Logo">
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" style="width: 126px; margin-right: 50px;"
+                         data-swiper-slide-index="5">
+                        <div class="brand-logo">
+                            <img src="https://themeim.com/demo/gio/index/media/logo/6.png" alt="Brand Logo">
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" style="width: 126px; margin-right: 50px;"
+                         data-swiper-slide-index="6">
+                        <div class="brand-logo">
+                            <img src="https://themeim.com/demo/gio/index/media/logo/3.png" alt="Brand Logo">
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-prev" style="width: 126px; margin-right: 50px;"
+                         data-swiper-slide-index="0">
+                        <div class="brand-logo">
+                            <img src="https://themeim.com/demo/gio/index/media/logo/1.png" alt="Brand Logo">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide swiper-slide-active" style="width: 126px; margin-right: 50px;"
+                         data-swiper-slide-index="1">
+                        <div class="brand-logo">
+                            <img src="https://themeim.com/demo/gio/index/media/logo/2.png" alt="Brand Logo">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide swiper-slide-next" style="width: 126px; margin-right: 50px;"
+                         data-swiper-slide-index="2">
+                        <div class="brand-logo">
+                            <img src="https://themeim.com/demo/gio/index/media/logo/3.png" alt="Brand Logo">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide" style="width: 126px; margin-right: 50px;" data-swiper-slide-index="3">
+                        <div class="brand-logo">
+                            <img src="https://themeim.com/demo/gio/index/media/logo/4.png" alt="Brand Logo">
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="width: 126px; margin-right: 50px;" data-swiper-slide-index="4">
+                        <div class="brand-logo">
+                            <img src="https://themeim.com/demo/gio/index/media/logo/5.png" alt="Brand Logo">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide" style="width: 126px; margin-right: 50px;" data-swiper-slide-index="5">
+                        <div class="brand-logo">
+                            <img src="https://themeim.com/demo/gio/index/media/logo/6.png" alt="Brand Logo">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide" style="width: 126px; margin-right: 50px;" data-swiper-slide-index="6">
+                        <div class="brand-logo">
+                            <img src="https://themeim.com/demo/gio/index/media/logo/3.png" alt="Brand Logo">
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
+                         style="width: 126px; margin-right: 50px;" data-swiper-slide-index="0">
+                        <div class="brand-logo">
+                            <img src="https://themeim.com/demo/gio/index/media/logo/1.png" alt="Brand Logo">
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                         style="width: 126px; margin-right: 50px;" data-swiper-slide-index="1">
+                        <div class="brand-logo">
+                            <img src="https://themeim.com/demo/gio/index/media/logo/2.png" alt="Brand Logo">
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+                         style="width: 126px; margin-right: 50px;" data-swiper-slide-index="2">
+                        <div class="brand-logo">
+                            <img src="https://themeim.com/demo/gio/index/media/logo/3.png" alt="Brand Logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /#logo-carousel -->
+
+    <!--============================-->
+    <!--=        Footer One        =-->
+    <!--============================-->
+    <footer id="footer-three">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="copy-right">
+                    <p>Copyright 2020 <span style="color: #f68b1f">FRaternity</span> All Rights Reserved</p>
+                </div>
+            </div>
+            <!-- /.footer-inner -->
+        </div>
+        <!-- /.container -->
+        <!-- <div class="fire-bg-wrap">
+    <div class="footer-fire"></div>
+</div> -->
+        <!-- /.fire-bg-wrap -->
+    </footer>
+    <!-- /#footer-three -->
+
+
+</div>
+<!-- /#site -->
+
+<!-- Dependency Scripts -->
+<script src="dependencies/popper.js/popper.min.js"></script>
+<script src="dependencies/jquery/jquery.min.js"></script>
+<script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+<script src="dependencies/swiper/js/swiper.min.js"></script>
+<script src="dependencies/swiperRunner/swiperRunner.min.js"></script>
+<script src="dependencies/slick-carousel/js/slick.min.js"></script>
+<script src="dependencies/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+<script src="dependencies/jquery-ui/jquery-ui.min.js"></script>
+<script src="dependencies/jquery-animated-headlines/js/jquery.animatedheadline.min.js"></script>
+<script src="dependencies/jquery.countdown/jquery.countdown.min.js"></script>
+<script src="dependencies/countUp.js/js/countUp.min.js"></script>
+<script src="dependencies/jquery.appear.bas2k/jquery.appear.js"></script>
+<script src="dependencies/jquery.ripples/jquery.ripples.js"></script>
+<script src="dependencies/wow/js/wow.min.js"></script>
+
+<!-- Site Scripts -->
+<script src="assets/js/app.js"></script>
+
+
+</body>
+</html>
