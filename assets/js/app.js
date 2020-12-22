@@ -1,6 +1,6 @@
 var THEMEIM = THEMEIM || {};
 
-(function($) {
+(function ($) {
 
     /*!----------------------------------------------
         # This beautiful code written with heart
@@ -13,7 +13,7 @@ var THEMEIM = THEMEIM || {};
 
     THEMEIM.initialize = {
 
-        init: function() {
+        init: function () {
             THEMEIM.initialize.general();
             THEMEIM.initialize.mobileMenu();
             THEMEIM.initialize.sectionBackground();
@@ -26,18 +26,18 @@ var THEMEIM = THEMEIM || {};
         /*=           Collection of snippet and tweaks           =*/
         /*========================================================*/
 
-        general: function() {
+        general: function () {
 
-            $('.swiper-container').each(function() {
+            $('.swiper-container').each(function () {
                 new SwiperRunner($(this));
             });
 
-            $('.video-play-btn, .popup-btn-two, .pop-up, .popup-btn-three').magnificPopup({
+            $('.video-play-btn, .pop-up, .popup-btn-three').magnificPopup({
                 type: 'iframe'
             });
 
             /* Video Play With Poster */
-            $('.youtube-wrapper').on('click', function(event) {
+            $('.youtube-wrapper').on('click', function (event) {
                 event.preventDefault();
                 var fr = $(this).find('iframe');
                 var fadr = $(this).find('iframe').attr('src');
@@ -64,7 +64,7 @@ var THEMEIM = THEMEIM || {};
                     duration: 300,
                     easing: 'ease-in-out',
 
-                    opener: function(openerElement) {
+                    opener: function (openerElement) {
                         return openerElement.is('img') ? openerElement : openerElement.find('img');
                     }
                 }
@@ -73,16 +73,16 @@ var THEMEIM = THEMEIM || {};
             /* Accordian Adding Class */
             var $panelgroup = $('#accordion');
             $panelgroup.find('.card:has(".show")').addClass('card-active');
-            $panelgroup.on('shown.bs.collapse', function(e) {
+            $panelgroup.on('shown.bs.collapse', function (e) {
                 $(e.target).closest('.card').addClass('card-active');
-            }).on('hidden.bs.collapse', function(e) {
+            }).on('hidden.bs.collapse', function (e) {
                 $(e.target).closest('.card').removeClass('card-active');
             });
 
             /* Menu tab */
             $('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
 
-            $('.tab ul.tabs li a').hover(function(g) {
+            $('.tab ul.tabs li a').hover(function (g) {
                 var tab = $(this).closest('.tab'),
                     index = $(this).closest('li').index();
 
@@ -102,7 +102,7 @@ var THEMEIM = THEMEIM || {};
                 min: 0,
                 max: 500,
                 values: [20, 300],
-                slide: function(event, ui) {
+                slide: function (event, ui) {
                     $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
                 }
             });
@@ -111,19 +111,19 @@ var THEMEIM = THEMEIM || {};
                 " - $" + $("#slider-range").slider("values", 1));
 
             /* Header Search */
-            $('.search-btn').on('click', function() {
+            $('.search-btn').on('click', function () {
                 $('.top-search-form').toggleClass('active');
             });
 
             /*  Header Text */
-            $(function() {
+            $(function () {
                 $('.header-text').animatedHeadline({
                     animationType: 'slide'
                 });
             })
 
             /*  Active Menu */
-            $('.tim-nav li > a').each(function() {
+            $('.tim-nav li > a').each(function () {
                 if ($(this).attr('href') == location.href.split("/").slice(-1)) {
                     $(this).addClass('current_page');
                 }
@@ -161,9 +161,9 @@ var THEMEIM = THEMEIM || {};
             }
 
             /* Quantity Count */
-            (function() {
-                $(function() {
-                    return $(".minus,.plus").click(function(e) {
+            (function () {
+                $(function () {
+                    return $(".minus,.plus").click(function (e) {
                         var inc_dec, qty;
                         inc_dec = $(this).hasClass("minus") ? -1 : 1;
                         qty = $("[name=quantity]");
@@ -174,7 +174,7 @@ var THEMEIM = THEMEIM || {};
             }).call(this);
 
             /* Rating Star */
-            $('.rating li').on('click', function() {
+            $('.rating li').on('click', function () {
                 var selectedCssClass = 'selected';
                 var $this = $(this);
                 $this.siblings('.' + selectedCssClass).removeClass(selectedCssClass);
@@ -188,9 +188,9 @@ var THEMEIM = THEMEIM || {};
         /*=           Mobile Menu          =*/
         /*==================================*/
 
-        mobileMenu: function() {
+        mobileMenu: function () {
 
-            var Accordion = function(el, multiple) {
+            var Accordion = function (el, multiple) {
                 this.el = el || {};
 
                 this.multiple = multiple || false;
@@ -203,7 +203,7 @@ var THEMEIM = THEMEIM || {};
                     this.dropdown);
             };
 
-            Accordion.prototype.dropdown = function(e) {
+            Accordion.prototype.dropdown = function (e) {
                 e.preventDefault();
                 var $el = e.data.el,
                     $this = $(this),
@@ -221,13 +221,13 @@ var THEMEIM = THEMEIM || {};
 
             var accordion = new Accordion($('.accordion-menu'), false);
 
-            $('.toggle-inner').on('click', function(e) {
+            $('.toggle-inner').on('click', function (e) {
                 e.preventDefault();
                 var mask = '<div class="mask-overlay">';
 
                 $('body').toggleClass('active');
                 $(mask).hide().appendTo('body').fadeIn('fast');
-                $('.mask-overlay, .close-menu').on('click', function() {
+                $('.mask-overlay, .close-menu').on('click', function () {
                     $('body').removeClass('active');
                     $('.mask-overlay').remove();
                 });
@@ -238,10 +238,10 @@ var THEMEIM = THEMEIM || {};
         /*=           Section Background           =*/
         /*==========================================*/
 
-        sectionBackground: function() {
+        sectionBackground: function () {
 
             // Section Background Image
-            $('[data-bg-image]').each(function() {
+            $('[data-bg-image]').each(function () {
                 var img = $(this).data('bg-image');
                 $(this).css({
                     backgroundImage: 'url(' + img + ')',
@@ -249,7 +249,7 @@ var THEMEIM = THEMEIM || {};
             });
 
             //Parallax Background
-            $('[data-parallax="image"]').each(function() {
+            $('[data-parallax="image"]').each(function () {
 
                 var actualHeight = $(this).position().top;
                 var speed = $(this).data('parallax-speed');
@@ -267,8 +267,8 @@ var THEMEIM = THEMEIM || {};
         /*=           Section Background          =*/
         /*=========================================*/
 
-        sectionSwitch: function() {
-            $('[data-type="section-switch"], #menu-home li a, #banner-particales a, #banner-creative a, #banner-ripple a').on('click', function() {
+        sectionSwitch: function () {
+            $('[data-type="section-switch"], #menu-home li a, #banner-particales a, #banner-creative a, #banner-ripple a').on('click', function () {
                 if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                     var target = $(this.hash);
                     if (target.length > 0) {
@@ -286,7 +286,7 @@ var THEMEIM = THEMEIM || {};
         /*==============================*/
         /*=           Countup          =*/
         /*==============================*/
-        countUp: function() {
+        countUp: function () {
             var options = {
                 useEasing: true,
                 useGrouping: true,
@@ -299,11 +299,11 @@ var THEMEIM = THEMEIM || {};
             var counteEl = $('[data-counter]');
 
             if (counteEl) {
-                counteEl.each(function() {
+                counteEl.each(function () {
                     var val = $(this).data('counter');
 
                     var countup = new CountUp(this, 0, val, 0, 2.5, options);
-                    $(this).appear(function() {
+                    $(this).appear(function () {
                         countup.start();
                     }, {
                         accX: 0,
@@ -317,13 +317,13 @@ var THEMEIM = THEMEIM || {};
         /*=           Count Down          =*/
         /*=================================*/
 
-        countDown: function() {
-            $('.countdown').each(function(index, value) {
+        countDown: function () {
+            $('.countdown').each(function (index, value) {
                 var count_year = $(this).attr("data-count-year");
                 var count_month = $(this).attr("data-count-month");
                 var count_day = $(this).attr("data-count-day");
                 var count_date = count_year + '/' + count_month + '/' + count_day;
-                $(this).countdown(count_date, function(event) {
+                $(this).countdown(count_date, function (event) {
                     $(this).html(
                         event.strftime('<span class="CountdownContent">%D<span class="CountdownLabel">Days</span></span><span class="CountdownSeparator">:</span><span class="CountdownContent">%H <span class="CountdownLabel">Hours</span></span><span class="CountdownSeparator">:</span><span class="CountdownContent">%M <span class="CountdownLabel">Minutes</span></span><span class="CountdownSeparator">:</span><span class="CountdownContent">%S <span class="CountdownLabel">Seconds</span></span>')
                     );
@@ -334,26 +334,26 @@ var THEMEIM = THEMEIM || {};
     };
 
     THEMEIM.documentOnReady = {
-        init: function() {
+        init: function () {
             THEMEIM.initialize.init();
 
         },
     };
 
     THEMEIM.documentOnLoad = {
-        init: function() {
+        init: function () {
             $("#loader-wrapper").fadeOut("slow");
         },
     };
 
     THEMEIM.documentOnResize = {
-        init: function() {
+        init: function () {
 
         },
     };
 
     THEMEIM.documentOnScroll = {
-        init: function() {
+        init: function () {
             THEMEIM.initialize.sectionBackground();
 
             if ($(window).scrollTop() > 700) {
