@@ -2,12 +2,6 @@ var THEMEIM = THEMEIM || {};
 
 (function ($) {
 
-    /*!----------------------------------------------
-        # This beautiful code written with heart
-        # by Mominul Islam <me@mominul.me>
-        # In Dhaka, BD at the ThemeIm workstation.
-        ---------------------------------------------*/
-
     // USE STRICT
     "use strict";
 
