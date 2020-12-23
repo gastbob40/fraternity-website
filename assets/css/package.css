@@ -25,3 +25,34 @@
 .package-item-action > a > i {
     margin-right: 16px;
 }
+
+.slick-dots li button:before {
+    color: white;
+}
+
+.slick-dots li button:before {
+    opacity: 50%;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #f68b1f;
+}
+
+.product-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-title > .current-price {
+    color: #f68b1f;
+}
+
+.product-title > * {
+    margin: 0;
+    padding: 0;
+}
+
+.product-description {
+    margin-top: 16px;
+}
