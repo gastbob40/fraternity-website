@@ -1,0 +1,27 @@
+.package-item {
+    margin-bottom: 32px;
+}
+
+.package-item-action > h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.package-item-action {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.package-item-action > a {
+    font-size: 20px;
+    padding: 8px 16px;
+    height: 44px;
+    white-space: nowrap;
+}
+
+.package-item-action > a > i {
+    margin-right: 16px;
+}
