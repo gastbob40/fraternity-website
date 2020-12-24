@@ -56,3 +56,7 @@
 .product-description {
     margin-top: 16px;
 }
+
+.package-item > img {
+    border-radius: 12px;
+}
