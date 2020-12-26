@@ -60,3 +60,144 @@
 .package-item > img {
     border-radius: 12px;
 }
+
+/* BASKET DATA */
+
+.basket-summary {
+    width: 100%;
+    padding: 20px;
+    background-color: #080811;
+    border-radius: 25px;
+    margin-bottom: 16px;
+}
+
+.basket-table {
+    width: 100%;
+    max-width: 100%;
+    background-color: transparent;
+    margin: 0;
+    border-collapse: collapse;
+}
+
+.basket-table > thead {
+    border: medium none;
+}
+
+tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+thead > tr > th {
+    border: medium none;
+    text-transform: capitalize;
+    font-weight: 600;
+    border-top: 0px !important;
+    /* text-align: center; */
+}
+
+table th, table td {
+    vertical-align: middle;
+    border-top: 0px;
+    border-top: 1px solid #24243e;
+    padding: 12px 8px;
+}
+
+/* NUM BLOCK */
+
+.num-block {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.num-in {
+    background: #0d0e1b none repeat scroll 0 0;
+    border-radius: 25px;
+    height: 40px;
+    width: 110px;
+    float: left;
+}
+
+.num-in span {
+    width: 40%;
+    display: block;
+    height: 40px;
+    float: left;
+    position: relative;
+}
+
+.num-in input {
+    background: #0d0e1b none repeat scroll 0 0;
+    float: left;
+    width: 20%;
+    height: 40px;
+    border: none;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+
+.num-in span:before, .num-in span:after {
+    content: '';
+    position: absolute;
+    background-color: #667780;
+    height: 2px;
+    width: 10px;
+    top: 50%;
+    left: 50%;
+    margin-top: -1px;
+    margin-left: -5px;
+}
+
+
+span.plus:after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.num-in span:before, .num-in span:after {
+    content: '';
+    position: absolute;
+    background-color: #667780;
+    height: 2px;
+    width: 10px;
+    top: 50%;
+    left: 50%;
+    margin-top: -1px;
+    margin-left: -5px;
+}
+
+
+input.input {
+    display: block;
+    padding: 10px 15px;
+    background: transparent;
+    border: 1px solid #807e7e;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 16px;
+    outline: 0;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+input.input::-webkit-input-placeholder {
+    color: #424242;
+}
+
+input.input::-ms-input-placeholder {
+    color: #424242;
+}
+
+input.input::placeholder {
+    color: #424242;
+}
+
+input.input:hover, input.input:focus {
+    border-color: #f68b1f;
+}
+
